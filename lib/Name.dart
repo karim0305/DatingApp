@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Age_Page extends StatefulWidget {
-  const Age_Page({super.key});
+class Name_Page extends StatefulWidget {
+  const Name_Page({super.key});
 
   @override
-  State<Age_Page> createState() => _Age_PageState();
+  State<Name_Page> createState() => _Name_PageState();
 }
 
-class _Age_PageState extends State<Age_Page> {
+class _Name_PageState extends State<Name_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,10 +35,15 @@ class _Age_PageState extends State<Age_Page> {
             ),
             Row(
               children: [
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 3, horizontal: 50),
+                  decoration: BoxDecoration(color: Colors.redAccent),
+                ),
                 Expanded(
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 3),
-                    decoration: BoxDecoration(color: Colors.redAccent),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 178, 190, 196)),
                   ),
                 ),
               ],
@@ -49,14 +54,14 @@ class _Age_PageState extends State<Age_Page> {
             Row(
               children: [
                 Text(
-                  "Your Age",
+                  "Your First Name",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 //Image.asset("lib/imagesrc/celebration.jpg")
                 Padding(
                   padding: const EdgeInsets.all(3.0),
                   child: Icon(
-                    Icons.celebration_outlined,
+                    Icons.back_hand_outlined,
                     size: 30,
                   ),
                 )
@@ -67,7 +72,7 @@ class _Age_PageState extends State<Age_Page> {
                   color: Colors.amber, borderRadius: BorderRadius.circular(50)),
               child: TextFormField(
                 decoration: InputDecoration(
-                    hintText: "Age",
+                    hintText: "First Name",
                     filled: true,
                     fillColor: const Color.fromARGB(255, 228, 226, 226),
                     enabledBorder: OutlineInputBorder(

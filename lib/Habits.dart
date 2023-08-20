@@ -91,7 +91,9 @@ class _Habits_PageState extends State<Habits_Page> {
                     filled: true,
                     fillColor: Color.fromARGB(219, 252, 251, 251),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20.0)),
+                      borderRadius: BorderRadius.circular(20.0),
+                      borderSide: BorderSide.none,
+                    ),
                     contentPadding: const EdgeInsets.all(10),
                   ),
                   child: DropdownButtonHideUnderline(
@@ -148,7 +150,9 @@ class _Habits_PageState extends State<Habits_Page> {
                     filled: true,
                     fillColor: Color.fromARGB(163, 252, 251, 251),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20.0)),
+                      borderRadius: BorderRadius.circular(20.0),
+                      borderSide: BorderSide.none,
+                    ),
                     contentPadding: const EdgeInsets.all(10),
                   ),
                   child: DropdownButtonHideUnderline(
