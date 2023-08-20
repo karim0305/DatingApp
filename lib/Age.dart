@@ -11,7 +11,7 @@ class _Age_PageState extends State<Age_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(57, 182, 245, 243),
+      backgroundColor: Color.fromARGB(131, 218, 216, 216),
       body: SafeArea(
           child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
