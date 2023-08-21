@@ -63,6 +63,9 @@ flutter:
   assets:
     - lib/imagesrc/loginbackground.png
     - lib/imagesrc/celebration.jpg
+    - lib/imagesrc/ico-slider.png
+    - lib/imagesrc/selfie.jpg
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
