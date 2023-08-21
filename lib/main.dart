@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 //import 'Habits.dart';
+import 'Add_Photo.dart';
 import 'Name.dart';
 
 //import 'Age.dart';
@@ -10,6 +11,6 @@ import 'Name.dart';
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: Name_Page(),
+    home: Add_P(),
   ));
 }
