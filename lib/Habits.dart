@@ -19,7 +19,7 @@ class _Habits_PageState extends State<Habits_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(131, 218, 216, 216),
+      backgroundColor: Color.fromARGB(255, 248, 245, 245),
       body: Column(
         children: [
           SafeArea(

@@ -11,7 +11,7 @@ class _Name_PageState extends State<Name_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(131, 218, 216, 216),
+      backgroundColor: Color.fromARGB(255, 248, 245, 245),
       body: SafeArea(
           child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),

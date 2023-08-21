@@ -12,10 +12,10 @@ class _Relation_PageState extends State<Relation_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(57, 182, 245, 243),
+      backgroundColor: Color.fromARGB(255, 248, 245, 245),
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         child: Column(
           children: [
             Row(
@@ -54,7 +54,7 @@ class _Relation_PageState extends State<Relation_Page> {
                       "Purpose of aquientence",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 25,
+                          fontSize: 20,
                           color: Colors.black),
                     ),
                     //Image.asset("lib/imagesrc/celebration.jpg")
@@ -63,7 +63,7 @@ class _Relation_PageState extends State<Relation_Page> {
                 Container(
                   padding: EdgeInsets.symmetric(
                     vertical: 15,
-                    horizontal: 15,
+                    horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -80,7 +80,7 @@ class _Relation_PageState extends State<Relation_Page> {
                       Text(
                         "Relationship",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                         ),
                       )
                     ],
@@ -92,7 +92,7 @@ class _Relation_PageState extends State<Relation_Page> {
                 Container(
                   padding: EdgeInsets.symmetric(
                     vertical: 15,
-                    horizontal: 15,
+                    horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -109,7 +109,7 @@ class _Relation_PageState extends State<Relation_Page> {
                       Text(
                         "Family",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                         ),
                       ),
                     ],
@@ -121,7 +121,7 @@ class _Relation_PageState extends State<Relation_Page> {
                 Container(
                   padding: EdgeInsets.symmetric(
                     vertical: 15,
-                    horizontal: 15,
+                    horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -138,7 +138,7 @@ class _Relation_PageState extends State<Relation_Page> {
                       Text(
                         "Open Relationship",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 15,
                         ),
                       ),
                     ],
@@ -150,7 +150,7 @@ class _Relation_PageState extends State<Relation_Page> {
                 Container(
                   padding: EdgeInsets.symmetric(
                     vertical: 15,
-                    horizontal: 15,
+                    horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -164,10 +164,16 @@ class _Relation_PageState extends State<Relation_Page> {
                       SizedBox(
                         width: 5,
                       ),
-                      Text(
-                        "Friendship and Communication",
-                        style: TextStyle(
-                          fontSize: 20,
+                      Expanded(
+                        child: Row(
+                          children: [
+                            Text(
+                              "Friendship and Communication",
+                              style: TextStyle(
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ],
