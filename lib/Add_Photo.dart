@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'relation_page.dart';
 
 class Add_P extends StatefulWidget {
   const Add_P({super.key});
@@ -74,25 +76,30 @@ class _Add_PState extends State<Add_P> {
                             SizedBox(height: 10),
                             const Text("Nobody will see you without a photo!"),
                             const Text("Upload a Photo to start daing"),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 8),
-                              decoration: BoxDecoration(
-                                color: Colors.redAccent,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: const Text(
-                                "Add Photo",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold),
+                            InkWell(
+                              onTap: () {
+                                Get.to(const RelationPage());
+                              },
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 10, vertical: 8),
+                                decoration: BoxDecoration(
+                                  color: Colors.redAccent,
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: const Text(
+                                  "Add Photo",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
                               ),
                             ),
                           ],
                         ),
                       ),
                       const SizedBox(
-                        height: 300,
+                        height: 220,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

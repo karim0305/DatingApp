@@ -1,23 +1,25 @@
+import 'package:dating_app/Name.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Age_Page extends StatefulWidget {
-  const Age_Page({super.key});
+class AgePage extends StatefulWidget {
+  const AgePage({super.key});
 
   @override
-  State<Age_Page> createState() => _Age_PageState();
+  State<AgePage> createState() => _AgePageState();
 }
 
-class _Age_PageState extends State<Age_Page> {
+class _AgePageState extends State<AgePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 248, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 248, 245, 245),
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
         child: Column(
           children: [
-            Row(
+            const Row(
               children: [
                 Icon(
                   Icons.arrow_back_ios_outlined,
@@ -25,7 +27,7 @@ class _Age_PageState extends State<Age_Page> {
                   size: 18,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     "Back",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -37,16 +39,16 @@ class _Age_PageState extends State<Age_Page> {
               children: [
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 3),
-                    decoration: BoxDecoration(color: Colors.redAccent),
+                    padding: const EdgeInsets.symmetric(vertical: 3),
+                    decoration: const BoxDecoration(color: Colors.redAccent),
                   ),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
               children: [
                 Text(
                   "Your Age",
@@ -54,7 +56,7 @@ class _Age_PageState extends State<Age_Page> {
                 ),
                 //Image.asset("lib/imagesrc/celebration.jpg")
                 Padding(
-                  padding: const EdgeInsets.all(3.0),
+                  padding: EdgeInsets.all(3.0),
                   child: Icon(
                     Icons.celebration_outlined,
                     size: 30,
@@ -76,22 +78,24 @@ class _Age_PageState extends State<Age_Page> {
                     )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 200,
             ),
             Row(
               children: [
                 Expanded(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const NamePage());
+                    },
                     child: Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 30),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
-                        color: Color.fromARGB(255, 228, 226, 226),
+                        color: const Color.fromARGB(255, 228, 226, 226),
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Next",
                         style: TextStyle(

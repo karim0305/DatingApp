@@ -1,23 +1,25 @@
+import 'package:dating_app/Add_Photo.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Name_Page extends StatefulWidget {
-  const Name_Page({super.key});
+class NamePage extends StatefulWidget {
+  const NamePage({super.key});
 
   @override
-  State<Name_Page> createState() => _Name_PageState();
+  State<NamePage> createState() => _NamePageState();
 }
 
-class _Name_PageState extends State<Name_Page> {
+class _NamePageState extends State<NamePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 248, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 248, 245, 245),
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 5),
         child: Column(
           children: [
-            Row(
+            const Row(
               children: [
                 Icon(
                   Icons.arrow_back_ios_outlined,
@@ -25,7 +27,7 @@ class _Name_PageState extends State<Name_Page> {
                   size: 18,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     "Back",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
@@ -36,22 +38,23 @@ class _Name_PageState extends State<Name_Page> {
             Row(
               children: [
                 Container(
-                  padding: EdgeInsets.symmetric(vertical: 3, horizontal: 50),
-                  decoration: BoxDecoration(color: Colors.redAccent),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 3, horizontal: 50),
+                  decoration: const BoxDecoration(color: Colors.redAccent),
                 ),
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 3),
-                    decoration: BoxDecoration(
+                    padding: const EdgeInsets.symmetric(vertical: 3),
+                    decoration: const BoxDecoration(
                         color: Color.fromARGB(255, 178, 190, 196)),
                   ),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
               children: [
                 Text(
                   "Your First Name",
@@ -59,7 +62,7 @@ class _Name_PageState extends State<Name_Page> {
                 ),
                 //Image.asset("lib/imagesrc/celebration.jpg")
                 Padding(
-                  padding: const EdgeInsets.all(3.0),
+                  padding: EdgeInsets.all(3.0),
                   child: Icon(
                     Icons.back_hand_outlined,
                     size: 30,
@@ -81,22 +84,24 @@ class _Name_PageState extends State<Name_Page> {
                     )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 200,
             ),
             Row(
               children: [
                 Expanded(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const Add_P());
+                    },
                     child: Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 15, horizontal: 30),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(7),
-                        color: Color.fromARGB(255, 228, 226, 226),
+                        color: const Color.fromARGB(255, 228, 226, 226),
                       ),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Next",
                         style: TextStyle(

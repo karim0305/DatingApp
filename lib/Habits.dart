@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Habits_Page extends StatefulWidget {
-  const Habits_Page({super.key});
+import 'relation_page.dart';
+
+class HabitsPage extends StatefulWidget {
+  const HabitsPage({super.key});
 
   @override
-  State<Habits_Page> createState() => _Habits_PageState();
+  State<HabitsPage> createState() => _HabitsPageState();
 }
 
-class _Habits_PageState extends State<Habits_Page> {
+class _HabitsPageState extends State<HabitsPage> {
   List dropDownListData = [
     {"title": "BCA", "value": "1"},
     {"title": "MCA", "value": "2"},
@@ -19,15 +22,15 @@ class _Habits_PageState extends State<Habits_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 248, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 248, 245, 245),
       body: Column(
         children: [
           SafeArea(
               child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 40, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 5),
             child: Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Icon(
                       Icons.arrow_back_ios_outlined,
@@ -35,7 +38,7 @@ class _Habits_PageState extends State<Habits_Page> {
                       size: 18,
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         "Back",
                         style: TextStyle(
@@ -44,7 +47,7 @@ class _Habits_PageState extends State<Habits_Page> {
                     ),
                     Spacer(),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         "Skip",
                         style: TextStyle(fontSize: 18),
@@ -55,25 +58,25 @@ class _Habits_PageState extends State<Habits_Page> {
                 Row(
                   children: [
                     Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 3, horizontal: 50),
-                      decoration: BoxDecoration(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 3, horizontal: 50),
+                      decoration: const BoxDecoration(
                           color: Color.fromARGB(255, 178, 190, 196)),
                     ),
                     Expanded(
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 3, horizontal: 50),
-                        decoration: BoxDecoration(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 3, horizontal: 50),
+                        decoration: const BoxDecoration(
                             color: Color.fromARGB(255, 201, 209, 213)),
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Children",
@@ -83,13 +86,13 @@ class _Habits_PageState extends State<Habits_Page> {
                     //Image.asset("lib/imagesrc/celebration.jpg")
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 InputDecorator(
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color.fromARGB(219, 252, 251, 251),
+                    fillColor: const Color.fromARGB(219, 252, 251, 251),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20.0),
                       borderSide: BorderSide.none,
@@ -102,7 +105,7 @@ class _Habits_PageState extends State<Habits_Page> {
                         isExpanded: true,
                         menuMaxHeight: 350,
                         value: defaultvalue,
-                        icon: Icon(
+                        icon: const Icon(
                           // Add this
                           Icons.arrow_drop_down_sharp, // Add this
                           color: Colors.redAccent, // Add this
@@ -129,10 +132,10 @@ class _Habits_PageState extends State<Habits_Page> {
                         }),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Alcohol",
@@ -142,13 +145,13 @@ class _Habits_PageState extends State<Habits_Page> {
                     //Image.asset("lib/imagesrc/celebration.jpg")
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 InputDecorator(
                   decoration: InputDecoration(
                     filled: true,
-                    fillColor: Color.fromARGB(163, 252, 251, 251),
+                    fillColor: const Color.fromARGB(163, 252, 251, 251),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20.0),
                       borderSide: BorderSide.none,
@@ -161,7 +164,7 @@ class _Habits_PageState extends State<Habits_Page> {
                         isExpanded: true,
                         menuMaxHeight: 350,
                         value: defaultvalue,
-                        icon: Icon(
+                        icon: const Icon(
                           // Add this
                           Icons.arrow_drop_down_sharp, // Add this
                           color: Colors.redAccent, // Add this
@@ -175,7 +178,7 @@ class _Habits_PageState extends State<Habits_Page> {
                           ...dropDownListData
                               .map<DropdownMenuItem<String>>((data) {
                             return DropdownMenuItem(
-                                child: Text(data['title']),
+                                child: Text(data['Title']),
                                 value: data['value']);
                           }).toList(),
                         ],
@@ -188,10 +191,10 @@ class _Habits_PageState extends State<Habits_Page> {
                         }),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Smoking",
@@ -201,7 +204,7 @@ class _Habits_PageState extends State<Habits_Page> {
                     //Image.asset("lib/imagesrc/celebration.jpg")
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
               ],
@@ -212,27 +215,32 @@ class _Habits_PageState extends State<Habits_Page> {
               borderRadius: BorderRadius.circular(10),
               color: Colors.white,
             ),
-            margin: EdgeInsets.symmetric(horizontal: 10),
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       "Cancel",
                       style: TextStyle(fontSize: 20),
                     ),
-                    Text(
-                      "Done",
-                      style: TextStyle(fontSize: 20, color: Colors.red),
+                    InkWell(
+                      onTap: () {
+                        Get.to(const RelationPage());
+                      },
+                      child: const Text(
+                        "Done",
+                        style: TextStyle(fontSize: 20, color: Colors.red),
+                      ),
                     )
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
-                Text(
+                const Text(
                   "No",
                   style: TextStyle(fontSize: 20),
                 ),
@@ -240,9 +248,9 @@ class _Habits_PageState extends State<Habits_Page> {
                   children: [
                     Expanded(
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             color: Color.fromARGB(131, 186, 183, 183)),
-                        child: Text(
+                        child: const Text(
                           "Yes",
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 20),
@@ -251,15 +259,15 @@ class _Habits_PageState extends State<Habits_Page> {
                     ),
                   ],
                 ),
-                Text(
+                const Text(
                   "No but, i want",
                   style: TextStyle(fontSize: 20),
                 ),
-                Text(
+                const Text(
                   "already Adults",
                   style: TextStyle(fontSize: 20),
                 ),
-                Text(
+                const Text(
                   "Yes But i want more",
                   style: TextStyle(fontSize: 12, letterSpacing: 3),
                 ),

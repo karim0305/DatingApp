@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Relation_Page extends StatefulWidget {
-  const Relation_Page({super.key});
+class RelationPage extends StatefulWidget {
+  const RelationPage({super.key});
 
   @override
-  State<Relation_Page> createState() => _Relation_PageState();
+  State<RelationPage> createState() => _RelationPageState();
 }
 
-class _Relation_PageState extends State<Relation_Page> {
+class _RelationPageState extends State<RelationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 248, 245, 245),
+      backgroundColor: const Color.fromARGB(255, 248, 245, 245),
       body: SafeArea(
           child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         child: Column(
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: Text(
                     "Skip",
                     style: TextStyle(
@@ -36,19 +36,19 @@ class _Relation_PageState extends State<Relation_Page> {
               children: [
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 3),
-                    decoration: BoxDecoration(color: Colors.black12),
+                    padding: const EdgeInsets.symmetric(vertical: 3),
+                    decoration: const BoxDecoration(color: Colors.black12),
                   ),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Purpose of aquientence",
@@ -61,14 +61,14 @@ class _Relation_PageState extends State<Relation_Page> {
                   ],
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 15,
                     horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       FaIcon(
                         FontAwesomeIcons.solidHeart,
@@ -86,18 +86,18 @@ class _Relation_PageState extends State<Relation_Page> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 15,
                     horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       Icon(
                         Icons.family_restroom,
@@ -115,18 +115,18 @@ class _Relation_PageState extends State<Relation_Page> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 15,
                     horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       Icon(
                         Icons.inbox_outlined,
@@ -144,18 +144,18 @@ class _Relation_PageState extends State<Relation_Page> {
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 15,
                     horizontal: 9,
                   ),
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)),
-                  child: Row(
+                  child: const Row(
                     children: [
                       Icon(
                         Icons.handshake,
